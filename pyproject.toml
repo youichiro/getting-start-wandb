@@ -8,6 +8,13 @@ packages = [{include = "x_wandb"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+wandb = "^0.13.3"
+datasets = "^2.4.0"
+evaluate = "^0.2.2"
+torch = "^1.12.1"
+transformers = {extras = ["torch"], version = "^4.22.1"}
+sklearn = "^0.0"
+jupyter = "^1.0.0"
 
 
 [build-system]
