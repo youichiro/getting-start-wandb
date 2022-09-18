@@ -1,9 +1,17 @@
 ## Setup
-- install poetry
+- wandbのアカウントを作成する
+  - https://wandb.ai/site
+- poetryをインストールする
   - https://python-poetry.org/docs/
-- poetry install
-
-```sh
-poetry install
-```
-
+- ライブラリをインストールする
+  - `poetry install`
+- wandbにコマンドでログインする
+  - `poetry run wandb login`
+  - https://wandb.ai/authorize に表示されるキーを入力する
+  - ログイン情報は `~/.netrc` と `~/.config/wandb/settings` に保存される
+  - もしログイン情報をリセットしたい場合は `rm ~/.netrc && rm ~/.config/wandb/settings` する
+- transformersの「Fine-tune a pretrained model」で試す
+  - https://huggingface.co/docs/transformers/training
+  - `finetune.py.ipynb`を実行する
+- wandbのサイトにプロジェクトが作成され、学習のログが表示される
+  - https://wandb.ai/<your_account>/projects
