@@ -1,2 +1,5 @@
 __pycache__
 wandb
+.python-version
+model
+.ipynb_checkpoints
